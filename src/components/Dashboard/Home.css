@@ -1,0 +1,139 @@
+.main-container {
+  padding: 20px;
+  position: relative;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.card-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.card_icon {
+  font-size: 24px;
+}
+
+.BarGraph {
+  margin-left: 30px;
+  text-align: center;
+  width: calc(50% - 10px); /* Adjust BarGraph width for smaller screens */
+}
+
+.updateDataClass h2 {
+  text-align: center;
+}
+
+.updateDataClass {
+  position: absolute;
+  top: 10px;
+  right: 160px;
+  margin-bottom: 20px;
+}
+
+.update {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.update img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.noti {
+  flex-grow: 1;
+}
+
+.custClass {
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 35%;
+  right: 150px;
+ margin-top: 50px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 10px);
+  }
+
+  .BarGraph {
+    width: calc(100% - 10px);
+    margin-left: 0;
+  }
+
+  .updateDataClass,
+  .custClass {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .updateDataClass {
+    text-align: center;
+  }
+}
+@media (max-width: 468px) {
+  .card {
+    text-align: center;
+    width: calc(100% - 10px);
+  }
+  .card-inner{
+    margin-left: 50px;
+  }
+
+  .BarGraph {
+    display: none;
+  }
+
+  .updateDataClass,
+  .custClass {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .updateDataClass {
+    text-align: center;
+  }
+}
+
+
+
